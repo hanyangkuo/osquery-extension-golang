@@ -1,8 +1,8 @@
 # Hook Powershell Script on Osquery Extension Table.
 
 Testing with osquery version: 4.6.0.2, golang version: 1.16.7
-`go mod download`
-`go build -o script_example.exe main.go`
+- Download libs: `go mod download`
+- Build extension execute file: `go build -o script_example.exe main.go`
 
 ```
 # Copy files
