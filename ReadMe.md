@@ -24,6 +24,7 @@ icacls .\Extensions /inheritance:d /t
 # Test with osqueryi
 .\osqueryi --flagfile .\osquery.flags
 select * from script_example;
+select * from registry_example;
 .exit
 
 # Restart service osqueryd 

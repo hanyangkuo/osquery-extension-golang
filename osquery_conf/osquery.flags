@@ -1,5 +1,5 @@
 --extensions_autoload=C:\Program Files\osquery\extensions.load
---extensions_timeout=90
+--extensions_timeout=20
 --extensions_interval=10
 --nodisable_extensions
 --allow_unsafe
