@@ -31,7 +31,7 @@ icacls .\Extensions /inheritance:r /t
 icacls .\Extensions /inheritance:d /t
 ```
 
-![](.\images\osquery_grant.png)
+![](images/osquery_grant.png)
 
 - Test extension plugins with osqueryi
 ```
@@ -40,7 +40,7 @@ select * from script_example;
 select * from registry_example;
 .exit
 ```
-![](.\images\osquery_registry.png)
+![](images/osquery_registry.png)
 
 - Restart service osqueryd 
 ```
@@ -48,18 +48,17 @@ select * from registry_example;
 .\manage-osqueryd.ps1 -start
 ```
 osqueryd with create log under `C:\Program Files\osquery\log`
-![](.\images\osquery_loglocation.png)
+![](images/osquery_loglocation.png)
 
 ~ ERROR appeared ~
 server.RegisterPlugin (failed) -> osqueryd (created socket) -> osqueryd schedule query (failed) -> server.RegisterPlugin (re-register) -> osqueryd schedule query (success)
 
-![](.\images\osquery_log.png)
+![](images/osquery_log.png)
 
 [how to fixed] Changed time.sleep to ensure extension server registerPlugin after socket has been created by osqueryd
 osqueryd (created socket) -> server.RegisterPlugin (success)  -> osqueryd schedule query (success)
 
-![](.\images\golang_sleep.png)
-
+![](images/golang_sleep.png)
 
 ## Reference
 - [OSQuery Official](https://osquery.io/downloads/official/4.6.0)
